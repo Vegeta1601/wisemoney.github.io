@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-colour:#f28517
+}
+
+
+.background_image{
+    background-image: linear-gradient(#00010cb3,#00010cb3),url('./bg-image-1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.background_image .navbar {
+        padding: 20px 0px;
+}
+.navbar .navbar-brand {
+    color: white !important;
+    font-weight: 400;
+    font-size: 25px;
+}
+.navbar .nav-iteam {
+    margin: 0px 15px;
+}
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 14px;
+}
+.hero_section .content {
+    position: absolute;
+    top: 70px;
+}
+.hero_section .heading {
+    color: white !important;
+    font-weight: 900;
+    font-size: 67px;
+}
+.hero_section .txt {
+    color: #a9a9a9e0;
+    width: 84%;
+    margin: 21px 0px 21px 0px;
+}
+.hero_section .btn-primary-colour {
+    background-color: var(--primary-colour);
+    border: 2px solid var(--primary-colour);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 26px;
+}
+.hero_section .btn-primary-colour:hover {
+    background-color: var(--primary-colour);
+    border: 2px solid var(--primary-colour);
+    color: white;
+    animation: pulse;
+    animation-duration: 0.5s;
+
+}
+@media(max-width: 768px) and (min-width: 500px){
+    .hero_section .heading {
+        font-size: 48px;
+    }
+    .hero_section .txt {
+        font-size: 14px;
+    }
+    .hero_section .btn-primary-colour {
+        padding: 9px 18px;
+    }
+}
+/*services area*/
+.services_section0 {
+    margin: 100px 0px;
+}
+.services_section .heading {
+    font-weight: 800;
+    font-size: 50px;
+}
+.services_section .heading span {
+    color: var(--primary-colour);
+}
+.services_section .txt {
+    font-size: 14px;
+    color: #1f1f1fbb;
+}
+.services_cards .card {
+    background: #eaeaea61;
+    padding: 20px;
+}
+.services_cards .card:hover {
+    background: var(--primary-colour);
+    animation: pulse;
+    animation-duration: 00.5s;
+}
+.services_cards .card:hover ion-icon {
+    color: white !important;
+}
+.services_cards .card:hover .card_txt {
+    color: white !important;
+}
+.services_cards .card:hover .card_title {
+    color: white !important;
+}
+.services_cards .card .card-header {
+    background: transparent;
+}
+.services_cards .card .card-header ion-icon {
+    color: var(--primary-colour);
+    font-size: 40px;
+}
+.services_cards .card .card-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.services_cards .card_txt {
+    color: #000000ba;
+}
+/*team*/
+.team_section {
+    margin: 150px 0px;
+}
+.team_section .heading {
+    font-weight: 800;
+    font-size: 50px;
+}
+.team_section .heading span {
+    color: var(--primary-colour);
+}
+.team_section .txt {
+    font: size 14px;
+    color: #1f1f1fbb;
+}
+.team_section .card-body {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, #f28517, #e47709);
+    height: 25;
+    width: 100%;
+    display: none;
+}
+.team_section .card:hover {
+    animation: pulse;
+    animation-duration: 0.5s;
+}
+.team_section .card:hover .card-body {
+    display: block;
+    animation: flipInX;
+    animation-duration: 0.5s;
+}
+.team_section .card-body .card_title {
+    font-weight: 500;
+    font-size: 17px;
+}
+.team_section .card-body .card_txt {
+    color: #2d2d2d;
+    font-size: 13px !important
+}
+.team_section .card-body hr {
+    margin: 10px 0px;
+    height: 0.1px;
+    background: black;
+    width: 24%;
+}
+/*contact us*/
+.contact_section .heading {
+    font-weight: 800;
+    font-size: 50px;
+}
+.contact_section .heading span {
+    color: var(--primary-colour);
+}
+.contact_section .txt {
+    font-size: 14px;
+    color: #1f1f1fbb;
+}
+.contact_section form .from-control {
+    background: white;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 0;
+    color: rgb(39, 39, 39);
+}
+.contact_section form button {
+    background: var(--primary-colour);
+    border: 2px solid var(--primary-colour);
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px 10px 30px !important
+}
+.contact_section form button:hover {
+    animation: pulse;
+    animation-duration: 0.5s;
+    background: var(--primary-colour);
+    border: 2px solid var(--primary-colour);
+    color: white;
+}
+/*footer*/
+.footer_section {
+    background: rgb(39, 39, 39);
+    padding: 20px 0px;
+    margin: 5%;
+}
+.footer_section .navbar-brand {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer_section .navbar-brand span {
+    color: var(--primary-colour);
+    font-size: 30px;
+}
+.footer_section .links_column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer_section .links .fa {
+    color: var(--primary-colour);
+    font-size: 17px;
+    border: 2px solid var(--primary-colour);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100;
+    margin-right: 2px;
+}
+.footer_section .links .fa:hover {
+    animation: pulse;
+    animation-duration: 00.5s;
+}
